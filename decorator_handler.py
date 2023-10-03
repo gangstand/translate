@@ -1,9 +1,7 @@
-from typing import Callable, Any
-
 from pydantic import ValidationError
 
 
-def error_handler(func) -> Callable[[Any], Any]:
+def error_handler(func):
     """
     Декоратор для обработки ошибок в асинхронных функциях.
 
